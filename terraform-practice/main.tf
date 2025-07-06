@@ -1,7 +1,7 @@
 module "vpc" {
   source             = "./modules/vpc"
   vpc_cidr           = "10.2.0.0/16"
-  availability_zones = ["eu-central-1a", "eu-central-1b"]
+  availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
   public_subnets     = ["10.2.1.0/24", "10.2.2.0/24"]        # Публічні підмережі
   private_subnets    = ["10.2.3.0/24", "10.2.4.0/24"]        # Приватні підмережі
   vpc_name           = "vpc"
